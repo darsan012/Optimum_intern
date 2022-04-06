@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro&family=Roboto:wght@700&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding:0;
+    color: rgb(86,78,124);
+}
+body{
+    overflow: hidden;
+}
+.container{
+    width: 80%;
+    height: 100vh;
+    margin: 0 10%;
+    position: relative;
+}
+nav{
+    padding-top: 2%;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+}
+.logo{
+    color: rgb(117,98,224);
+    font-size: 30px;
+    font-weight: bold;
+}
+.nav-link{
+    display: flex;
+}
+.nav-link li a{
+    text-decoration: none;
+}
+li{
+    font-size: 20px;
+    list-style: none;
+    padding-left: 50px;
+    font-weight: bold;
+}
+.quarter{
+	width: 100vh;
+    height: 100vh;
+    border-radius: 100%;
+    background:rgb(117,98,224);
+    right: -50vh;
+    bottom: -40vh;
+    position: absolute;
+    z-index: -1;
+
+}
+.name{
+    color: rgb(19,8,69);
+}
+.name h1{
+    font-size: 55px;
+    font-family: 'Be Vietnam Pro', sans-serif;
+    line-height:75px;
+}
+.name p{
+    padding-top: 30px;
+    padding-bottom: 40px;
+    font-size: 20px;
+}
+.name button{
+    background-color: rgb(117,98,224);
+    font-size: 20px;
+    padding: 5px 15px;
+    color: white;
+    border: none;
+}
+section{
+    padding-top: 20px;
+    display: grid;
+    grid-template-columns: 30% 60% 10%;
+    align-items: center;
+}
+.icons{
+    margin-top: 200px; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.lo{
+    width: 20px;
+    padding: 10px 0;
+}
+.profile{
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
