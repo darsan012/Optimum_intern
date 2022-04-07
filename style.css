@@ -3,10 +3,10 @@
     box-sizing: border-box;
     margin: 0;
     padding:0;
-    color: rgb(207, 9, 210);
+    color: rgb(86,78,124);
 }
-body{
-    overflow: hidden;
+.main_page{
+     overflow:hidden; 
 }
 .container{
     width: 80%;
@@ -15,7 +15,7 @@ body{
     position: relative;
 }
 nav{
-    padding-top: 2%;
+    height: 10%;
     display: flex;
     align-items: center;
     justify-content:space-between;
@@ -61,14 +61,18 @@ li{
     padding-bottom: 40px;
     font-size: 20px;
 }
-.name button{
+button{
     background-color: rgb(117,98,224);
     font-size: 20px;
     padding: 5px 15px;
     color: white;
     border: none;
+
 }
-section{
+button:hover{
+    background-color:  rgb(75, 55, 189);
+}
+.middle_row{
     padding-top: 20px;
     display: grid;
     grid-template-columns: 30% 60% 10%;
@@ -89,4 +93,27 @@ section{
     display: flex;
     flex-direction: column;
     justify-content: end;
+}
+
+
+.card-group{
+    width: 100%;
+    margin:10% auto;
+    display: flex;
+    align-items:center;
+    justify-content:space-evenly;
+  }
+.card{
+    padding: 15px;
+    max-width: 20rem;
+    height: 25rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: antiquewhite;
+    justify-content: space-evenly;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+   
 }
