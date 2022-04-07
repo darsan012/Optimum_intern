@@ -1,0 +1,26 @@
+{
+  "name": "html-and-css",
+  "version": "1.0.0",
+  "description": "",
+  "main": "try.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "upload": "surge --project ./ --domain darshan.surge.sh"
+  },
+  "git": {
+    "scripts": {
+      "pre-push":"npm run upload"
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/darsan012/Optimum_intern.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/darsan012/Optimum_intern/issues"
+  },
+  "homepage": "https://github.com/darsan012/Optimum_intern#readme"
+}
