@@ -1,10 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro&family=Roboto:wght@700&display=swap');
+:root{
+    --color-text:rgb(86,78,124);
+    --color-arc: rgb(117,98,224);
+    --color-card: antiquewhite;
+    --color-hover:rgb(75, 55, 189);
+}
 *{
     box-sizing: border-box;
     margin: 0;
     padding:0;
-    color: rgb(86,78,124);
+    color: var(--color-text);
 }
+.dark-mode {
+    background-color: rgb(0, 17, 25);
+    --color-text: rgb(198, 185, 185);
+    --color-arc: rgb(5,55,82);
+    --color-card: rgb(63,152,146);
+    --color-hover:rgb(12, 67, 97);
+  }
 .main_page{
      overflow:hidden; 
 }
@@ -17,11 +30,13 @@
 nav{
     height: 10%;
     display: flex;
+    padding: 2% 5%;
     align-items: center;
     justify-content:space-between;
+   
 }
 .logo{
-    color: rgb(117,98,224);
+    color: var(--color-text);
     font-size: 30px;
     font-weight: bold;
 }
@@ -31,6 +46,7 @@ nav{
 .nav-link li a{
     text-decoration: none;
 }
+
 li{
     font-size: 20px;
     list-style: none;
@@ -41,7 +57,7 @@ li{
 	width: 100vh;
     height: 100vh;
     border-radius: 100%;
-    background:rgb(117,98,224);
+    background:var(--color-arc);
     right: -50vh;
     bottom: -40vh;
     position: absolute;
@@ -49,7 +65,7 @@ li{
 
 }
 .name{
-    color: rgb(19,8,69);
+    color: var(--color-text);
 }
 .name h1{
     font-size: 55px;
@@ -62,7 +78,7 @@ li{
     font-size: 20px;
 }
 button{
-    background-color: rgb(117,98,224);
+    background-color: var(--color-arc);
     font-size: 20px;
     padding: 5px 15px;
     color: white;
@@ -70,7 +86,7 @@ button{
 
 }
 button:hover{
-    background-color:  rgb(75, 55, 189);
+    background-color:  var(--color-hover);
 }
 .middle_row{
     padding-top: 20px;
@@ -89,12 +105,23 @@ button:hover{
     width: 20px;
     padding: 10px 0;
 }
+.lo:hover{
+    width:25px;
+}
 .profile{
     display: flex;
     flex-direction: column;
     justify-content: end;
 }
 
+.des{
+    padding-top: 8%;
+}
+.des p{
+    text-align: center;
+    font-size: 55px;
+    font-family: 'Be Vietnam Pro', sans-serif;
+}
 
 .card-group{
     width: 100%;
@@ -111,9 +138,17 @@ button:hover{
     flex-direction: column;
     align-items: center;
     text-align: center;
-    background-color: antiquewhite;
+    background-color:var(--color-card);
     justify-content: space-evenly;
     border-radius: 12px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
    
+}
+
+.card-header{
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 25px;
+}
+.card-text{
+    font-family: 'Courier New', Courier, monospace;
 }

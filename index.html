@@ -15,15 +15,23 @@
   </head>
   <body>
     <div class="main_page">
+      <nav>
+        <div class="logo">D.G.</div>
+        <ul class="nav-link">
+          <li><a href="#">Service</a></li>
+          <li><a href="#">Works</a></li>
+          <li><a href="#">Contact</a></li>
+          <li>
+            <a href="#" onclick="myfunction()"
+              ><img
+                style="width: 20px; margin-top: 2px"
+                src="images/toggle-off-solid.svg"
+                alt="switch"
+            /></a>
+          </li>
+        </ul>
+      </nav>
       <div class="container">
-        <nav>
-          <div class="logo">D.G.</div>
-          <ul class="nav-link">
-            <li><a href="#">Service</a></li>
-            <li><a href="#">Works</a></li>
-            <li><a href="#">Contact</a></li>
-          </ul>
-        </nav>
         <div class="quarter"></div>
         <section class="middle_row">
           <div class="name">
@@ -38,33 +46,40 @@
             <img src="images/profile.png" alt="profile_Pic" />
           </div>
           <div class="icons">
-            <img
-              class="lo"
-              src="images/behance-brands.svg"
-              alt="behance-brands"
-            />
-            <img
-              class="lo"
-              src="images/dribbble-brands.svg"
-              alt="dribble-brands"
-            />
-            <img
-              class="lo"
-              src="images/instagram-brands.svg"
-              alt="instagram-brands"
-            />
+            <a href="#"
+              ><img
+                class="lo"
+                src="images/behance-brands.svg"
+                alt="behance-brands"
+            /></a>
+            <a href="#">
+              <img
+                class="lo"
+                src="images/dribbble-brands.svg"
+                alt="dribble-brands"
+              />
+            </a>
+            <a href="#">
+              <img
+                class="lo"
+                src="images/instagram-brands.svg"
+                alt="instagram-brands"
+              />
+            </a>
           </div>
         </section>
       </div>
+    </div>
+    <div class="des">
+      <p>Some of my Projects.</p>
     </div>
     <div class="card-group">
       <div class="card">
         <div class="card-header">Smart Parking System</div>
         <div class="card-body">
-          <h5 class="card-title">Primary card title</h5>
           <p class="card-text">
-            Some quick example text to build on the card title and make up the
-            bulk of the card's content.
+            We made full automated parking system which is able to update the
+            slot info remotely.
           </p>
         </div>
         <div class="card-footer">
@@ -73,12 +88,11 @@
       </div>
 
       <div class="card">
-        <div class="card-header">Smart Parking System</div>
+        <div class="card-header">Aquabot</div>
         <div class="card-body">
-          <h5 class="card-title">Primary card title</h5>
           <p class="card-text">
-            Some quick example text to build on the card title and make up the
-            bulk of the card's content.
+            Aquabot was the bot able to compete in water, it was prepared for
+            competition.
           </p>
         </div>
         <div class="card-footer">
@@ -87,12 +101,11 @@
       </div>
 
       <div class="card">
-        <div class="card-header">Smart Parking System</div>
+        <div class="card-header">Automated line following bot</div>
         <div class="card-body">
-          <h5 class="card-title">Primary card title</h5>
           <p class="card-text">
-            Some quick example text to build on the card title and make up the
-            bulk of the card's content.
+            An automated bot was able to follow the line using ir sensors and
+            ultrasonic sensor.
           </p>
         </div>
         <div class="card-footer">
@@ -110,5 +123,6 @@
       integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
       crossorigin="anonymous"
     ></script> -->
+    <script src="try.js"></script>
   </body>
 </html>
